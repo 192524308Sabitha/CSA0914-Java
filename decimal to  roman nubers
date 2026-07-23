@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class DecimalToRoman {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a decimal number: ");
+        int n = sc.nextInt();
+
+        while (n >= 10) {
+            System.out.print("X");
+            n = n - 10;
+        }
+
+        while (n >= 9) {
+            System.out.print("IX");
+            n = n - 9;
+        }
+
+        while (n >= 5) {
+            System.out.print("V");
+            n = n - 5;
+        }
+
+        while (n >= 4) {
+            System.out.print("IV");
+            n = n - 4;
+        }
+
+        while (n >= 1) {
+            System.out.print("I");
+            n = n - 1;
+        }
+    }
+}
